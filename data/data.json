@@ -1,0 +1,194 @@
+[
+    {
+        "id": 1,
+        "question": "Cấu trúc của Decorator gồm mấy phần?",
+        "answers": [
+            {
+                "id": "A",
+                "answer": "4"
+            },
+            {
+                "id": "B",
+                "answer": "5"
+            },
+            {
+                "id": "C",
+                "answer": "6"
+            },
+            {
+                "id": "D",
+                "answer": "7"
+            }
+        ],
+        "correctAnswer": "B",
+        "explanation": "5 phần bao gồm: Component, ConcreteComponent, Decorator, ConcreteDecorator, Client"
+    },
+    {
+        "id": 2,
+        "question": "Ứng dụng nào sau đây không phải của Decorator Pattern?",
+        "answers": [
+            {
+                "id": "A",
+                "answer": "Thanh toán trực tuyến"
+            },
+            {
+                "id": "B",
+                "answer": "Logging"
+            },
+            {
+                "id": "C",
+                "answer": "Xác thực tài khoản"
+            },
+            {
+                "id": "D",
+                "answer": "Quản lý kết nối cơ sở dữ liệu"
+            }
+        ],
+        "correctAnswer": "D",
+        "explanation": "Decorator được áp dụng cho một số hệ thống liên quan tới UI, I/O,... chứ không được áp dụng trong hệ thống dữ liệu"
+    },
+    {
+        "id": 3,
+        "question": "Khi nào thì Decorator Pattern được coi là không phù hợp?",
+        "answers": [
+            {
+                "id": "A",
+                "answer": "Khi cần thêm nhiều tính năng khác nhau cho một đối tượng mà không cần thay đổi mã nguồn hiện có."
+            },
+            {
+                "id": "B",
+                "answer": "Khi cần tạo ra các đối tượng có hành vi thay đổi trong suốt vòng đời của chúng."
+            },
+            {
+                "id": "C",
+                "answer": "Khi cần sử dụng hệ thống phân cấp lớp đơn giản và không yêu cầu tính năng mở rộng linh hoạt."
+            },
+            {
+                "id": "D",
+                "answer": "Khi cần đảm bảo rằng tất cả các đối tượng đều tuân theo một giao diện thống nhất."
+            }
+        ],
+        "correctAnswer": "C",
+        "explanation": "Decorator sử dụng phương pháp tạo ra nhiều lớp con để xử lý vấn đề, chính vì thế không nên áp dụng với những hệ thống quá đơn giản -> Tăng độ phức tạp, giảm tính linh hoạt"
+    },
+    {
+        "id": 4,
+        "question": "Trong Decorator Pattern, các lớp trang trí (decorator) thường có tính chất nào sau đây?",
+        "answers": [
+            {
+                "id": "A",
+                "answer": "Không thể tương tác với các đối tượng khác"
+            },
+            {
+                "id": "B",
+                "answer": "Phụ thuộc vào việc kế thừa từ lớp cụ thể."
+            },
+            {
+                "id": "C",
+                "answer": "Kế thừa từ cùng một lớp cơ sở hoặc triển khai cùng một giao diện với đối tượng được trang trí."
+            },
+            {
+                "id": "D",
+                "answer": "Được sử dụng để xóa bỏ chức năng của đối tượng."
+            }
+        ],
+        "correctAnswer": "C",
+        "explanation": "Các lớp trang trí thường dùng để thêm chức năng cụ thể cho Component -> Kế thừa component"
+    },
+    {
+        "id": 5,
+        "question": "Decorator Pattern khác với Inheritance ở điểm nào?",
+        "answers": [
+            {
+                "id": "A",
+                "answer": "Decorator Pattern không sử dụng đa hình."
+            },
+            {
+                "id": "B",
+                "answer": "Inheritance cho phép thay đổi hành vi của lớp cha, còn Decorator Pattern không cho phép."    
+            },
+            {
+                "id": "C",
+                "answer": "Decorator Pattern cho phép thay đổi hoặc mở rộng chức năng của đối tượng mà không làm thay đổi lớp ban đầu"
+            },
+            {
+                "id": "D",
+                "answer": "Inheritance không hỗ trợ tái sử dụng mã, còn Decorator Pattern thì có."
+            }
+        ],
+        "correctAnswer": "C",
+        "explanation": "Này mày nói thêm lúc thuyết trình nha"
+    },
+    {
+        "id": 6,
+        "question": "Một trong những lợi ích chính của Decorator Pattern là gì?",
+        "answers": [
+            {
+                "id": "A",
+                "answer": "Giảm số lượng đối tượng được tạo ra."
+            },
+            {
+                "id": "B",
+                "answer": "Cho phép mở rộng chức năng của một đối tượng một cách linh hoạt mà không cần tạo ra một lớp dẫn xuất mới."
+            },
+            {
+                "id": "C",
+                "answer": "Tăng tốc độ thực thi của chương trình."
+            },
+            {
+                "id": "D",
+                "answer": "Tăng tính bảo mật của mã nguồn."
+            }
+        ],
+        "correctAnswer": "B",
+        "explanation": "Vì Decorator tạo ra các lớp con đảm nhận các chức năng bổ sung cho Component -> Không cần tạo lớp dẫn xuất mới"
+    },
+    {
+        "id": 7,
+        "question": "Decorator Pattern cho phép thay đổi hành vi của đối tượng bằng cách nào?",
+        "answers": [
+            {
+                "id": "A",
+                "answer": "Bằng cách sửa đổi trực tiếp mã nguồn của đối tượng."
+            },
+            {
+                "id": "B",
+                "answer": "Bằng cách thêm các thuộc tính tĩnh vào đối tượng."
+            },
+            {
+                "id": "C",
+                "answer": "Bằng cách bao bọc đối tượng với các lớp decorator khác nhau."
+            },
+            {
+                "id": "D",
+                "answer": "Bằng cách kế thừa từ lớp cơ sở của đối tượng."
+            }
+        ],
+        "correctAnswer": "C",
+        "explanation": "Các lớp decorator thường triển khai cùng một giao diện hoặc kế thừa cùng một lớp cơ sở với đối tượng gốc -> Mỗi lớp decorator nhận một đối tượng gốc để thêm chức năng cho nó (bao bọc)"
+    },
+    {
+        "id": 8,
+        "question": "Khi sử dụng Decorator Pattern, bạn cần chú ý điều gì để tránh làm phức tạp hệ thống?",
+        "answers": [
+            {
+                "id": "A",
+                "answer": "Chỉ sử dụng các lớp decorator với các phương thức tĩnh."
+            },
+            {
+                "id": "B",
+                "answer": "Tránh tạo ra quá nhiều lớp decorator không cần thiết."
+            },
+            {
+                "id": "C",
+                "answer": "Chỉ bọc đối tượng trong một lớp decorator duy nhất."
+            },
+            {
+                "id": "D",
+                "answer": "Tránh sử dụng các lớp cơ sở và giao diện."
+            }
+        ],
+        "correctAnswer": "B",
+        "explanation": "Tạo ra quá  nhiều lớp decorator -> tăng độ phức tạp, khiến mã nguồn khó đọc, khó bảo trì..."
+    }
+]

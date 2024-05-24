@@ -1,147 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=width-device, initial-scale=1.0" />
-		<link rel="stylesheet" href="./styles/styles.css" />
 		<link
 			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
 		/>
-		<title>eNKay Project</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./styles/styles.css" />
+		<title>Practice Decorator</title>
 	</head>
 	<body>
-		<header id="heading">
-			<nav id="navbar">
-				<a class="nav-link" href="#welcome-section">Giới thiệu</a>
-				<a class="nav-link" href="#projects">Công việc</a>
-				<a class="nav-link" href="#profile-link">Liên hệ</a>
-			</nav>
-		</header>
-		<section id="welcome-section">
-			<h1>Hù, tớ là eNKay đây</h1>
-			<p>a fun-snack developer</p>
-		</section>
-		<section id="projects">
-			<div class="project-header">
-				<h1>Đây là một số dự án của tớ</h1>
-				<hr />
-			</div>
-			<div class="projects">
-				<a
-					class="project-tile odd"
-					href="https://drive.google.com/file/d/1tJC0EaYQiAATudYQsXxuxtjBVcXl6dj_/view?usp=sharing"
-					target="_blank"
-				>
-					<img
-						class="project-image"
-						src="./images/Background-Menu.png"
-						alt="project-image-1"
-					/>
-					<h2 class="project-name">
-						<span class="project-decor"><</span>
-						Chill In Space Game
-						<span class="project-decor">/></span>
-					</h2>
-				</a>
-				<a
-					class="project-tile even"
-					href="https://sites.google.com/view/enkay-profile/trang-ch%E1%BB%A7"
-					target="_blank"
-				>
-					<img
-						class="project-image"
-						src="./images/GGSite.png"
-						alt="project-image-2"
-					/>
-					<h2 class="project-name">
-						<span class="project-decor"><</span>
-						eNKay Profile Site
-						<span class="project-decor">/></span>
-					</h2>
-				</a>
-				<a
-					class="project-tile odd"
-					href="https://youtu.be/XIWLMGlrs7M"
-					target="_blank"
-				>
-					<img
-						class="project-image"
-						src="./images/WLAN-Cover.jpg"
-						alt="project-image-3"
-					/>
-					<h2 class="project-name">
-						<span class="project-decor"><</span>
-						Cấu hình mạng WLAN video
-						<span class="project-decor">/></span>
-					</h2>
-				</a>
-				<a
-					class="project-tile even"
-					href="https://github.com/eNKay2408/new-year-new-change"
-					target="_blank"
-				>
-					<img class="project-image" src="./images/Git-Hub-logo.jpg"/
-					alt="project-image-4">
-					<h2 class="project-name">
-						<span class="project-decor"><</span>
-						New year new change Github
-						<span class="project-decor">/></span>
-					</h2>
-				</a>
-			</div>
-			<a
-				class="show-all"
-				href="https://www.facebook.com/nguyenkhai2408"
-				target="_blank"
-			>
+        <main>
+			<div id="subject">
+				<h1>Lập Trình Hướng Đối Tượng</h1>
+				<h3>Giảng viên - Hồ Tuấn Thanh</h3>
 				<p>
-					Hiển thị tất cả
-					<i class="fas fa-chevron-right"></i>
+                    <i class="fa-solid fa-angles-left"></i> 
+                    Một một hai tư có mặt - Gặt lại kiến thức thật chặt 
+                    <i class="fa-solid fa-angles-right"></i>
+                </p>
+			</div>
+			<div id="introduction">
+				<h2>Ôn Tập Decorator Pattern</h2>
+				<p>
+					Đây chỉ là bài ôn tập kiến thức
+                    <br>
+                    Không mang tính chất cạnh tranh
+                    <br>
+                    <strong>CHILL CHILL VÀ NẮM THẬT KỸ KIẾN THỨC NHÉ</strong>
 				</p>
-			</a>
-		</section>
-		<section id="profile">
-			<div class="profile-welcome">
-				<h1>Rất hi vọng được hợp tác</h1>
-				<p>Làm thế nào để vui vẻ với tớ?</p>
+				<p>
+					Tất cả mọi người tham gia đều sẽ <strong>có quà</strong> và đóng gói
+					về cho mình một <strong>bức ảnh đáng nhớ</strong>. Vì vậy, hãy cố lên và đừng bỏ lỡ cơ hội tuyệt vời này nha. Chúc ôn bài tốt ạ 
+                    <i class="fa-regular fa-face-kiss-wink-heart"></i>
+				</p>
 			</div>
-			<div class="profile-social">
-				<a
-					id="profile-link"
-					class="social-info"
-					href="https://www.facebook.com/nguyenkhai2408"
-					target="_blank"
-				>
-					<i class="fab fa-facebook-f"></i>
-					Facebook
-				</a>
-				<a
-					class="social-info"
-					href="https://github.com/eNKay2408"
-					target="_blank"
-				>
-					<i class="fab fa-github"></i>
-					Github
-				</a>
-				<a
-					class="social-info"
-					href="https://www.linkedin.com/in/en-kay/"
-					target="_blank"
-				>
-					<i class="fab fa-linkedin-in"></i>
-					LinkedIn
-				</a>
+			<div id="name">
+				<label for="name-input">Cho mình hỏi tên bạn tên là gì ạ? (*)</label>
+				<input
+					id="name-input"
+					type="text"
+					class="form-control"
+					placeholder="Tên"
+				/>
+				<button class="btn btn-primary" id="btn-name">Xác nhận</button>
 			</div>
-		</section>
-		<footer id="footer">
-			<div class="footer-note">
-				<p>Đây chỉ là web học tập - flex dự án</p>
-				<p>Không là chính thức - Cảm ơn đã quan tâm</p>
+			<form id="questions">
+                <h2>BẢNG CÂU HỎI</h2>
+			</form>
+            <div id="memory">
+                <h4 for="memory-input">Thử thách đặc biệt (*)</h4>
+                <h5>Hãy chụp ảnh cùng những người bạn "hổng ưa gì mấy" đã gắn bó suốt hành trình qua nào!</h6>
+                <p>
+                    Bởi lẽ sau này chia chuyên ngành khó có thể đồng hành tiếp rồi 
+                    <i class="fa-regular fa-face-sad-cry"></i> 
+                    Nên hãy lưu giữ kỷ niệm đáng nhớ này vào điện thoại để sau này già còn có cái xem lại nhé
+                </p>
+                <input type="file" id="memory-input"/>
+            </div>
+            <button id="submit" class="btn btn-success btn-lg">
+                GỬI
+            </button>
+		</main>
+		<div class="result" id="result-successful">
+				<h2>Thành công</h2>
+				<p>Cảm ơn bạn đã hoàn thành bài ôn tập</p>
+				<p><strong>Hãy chụp màn hình</strong> khoảnh này để lát tụi mình gửi quà nhé.</p>
+                <button class="btn btn-primary result-btn">OK</button>
 			</div>
-			<div class="nocopy">
-				<h3>© eNKay</h3>
+            <div class="result" id="result-failed">
+				<h2>Thất bại</h2>
+				<p>Bạn chưa hoàn thành tất cả yêu cầu</p>
+				<p><strong>Hãy thử kiểm tra lại</strong> các yêu cầu xem mình có bỏ sót yêu cầu nào không nhé.</p>
+                <button class="btn btn-primary result-btn">OK</button>
 			</div>
-		</footer>
+		<script src="./scripts/script.js"></script>
 	</body>
 </html>
