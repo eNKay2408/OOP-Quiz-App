@@ -20,7 +20,7 @@ const addQuestions = (data) => {
 		fieldset.id = `question-${d.id}`;
 
 		const legend = document.createElement("legend");
-		legend.innerHTML = `<i class="fa-solid fa-circle-question"></i> ${d.id}) ${d.question}`;
+		legend.innerHTML = `<i class="fa-solid fa-circle-question"></i> ${d.id}) ${d.question} (*)`;
 		fieldset.appendChild(legend);
 
 		d.answers.forEach((a) => {

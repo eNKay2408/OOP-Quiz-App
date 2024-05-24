@@ -25,8 +25,8 @@ body {
 }
 
 main {
-	width: 80%;
-	max-width: 700px;
+	width: 90%;
+	max-width: 730px;
 }
 
 main > * {
@@ -65,17 +65,27 @@ i:hover {
 }
 
 #subject p {
-	transition: transform 0.3s ease;
 	font-style: italic;
 	font-weight: bold;
+	animation: scaleAnimation 2s infinite;
 }
 
-#subject p:hover {
-	transform: scale(1.1);
+/* I want subject p transform scale constantly each 2 seconds */
+@keyframes scaleAnimation {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 #introduction > h2 {
 	color: var(--color2);
+	text-align: center;
 }
 
 #introduction > p:first-of-type {
@@ -147,6 +157,7 @@ form > fieldset > * {
 	transform: translate(-50%, 0);
 	left: 50%;
 	font-weight: bold;
+	overflow-x: hidden;
 }
 
 #submit {
@@ -157,15 +168,14 @@ form > fieldset > * {
 }
 
 .result {
+	width: 100%;
+	max-width: 450px;
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	display: grid;
-	place-items: center;
+	text-align: center;
 	font-size: 1.2rem;
-	height: 200px;
-	width: 600px;
 	background-color: var(--color1);
 	color: var(--color4);
 	text-align: center;
@@ -173,6 +183,10 @@ form > fieldset > * {
 	padding: 10px;
 	border-radius: 10px;
 	box-shadow: 0 0 10px 5px var(--color4);
+}
+
+.result > button {
+	margin: 10px 0;
 }
 
 #result-successful {
