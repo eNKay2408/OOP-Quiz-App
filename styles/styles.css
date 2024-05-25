@@ -141,6 +141,7 @@ form > fieldset > * {
 #memory {
 	background-color: var(--color1);
 	color: var(--color4);
+	overflow-x: hidden;
 }
 
 #memory > h4 {
@@ -153,11 +154,7 @@ form > fieldset > * {
 
 #memory > input {
 	margin: 10px auto;
-	position: relative;
-	transform: translate(-50%, 0);
-	left: 50%;
 	font-weight: bold;
-	overflow-x: hidden;
 }
 
 #submit {
@@ -168,7 +165,7 @@ form > fieldset > * {
 }
 
 .result {
-	width: 100%;
+	width: 80%;
 	max-width: 450px;
 	position: fixed;
 	top: 50%;
